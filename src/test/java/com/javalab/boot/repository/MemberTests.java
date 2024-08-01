@@ -58,7 +58,7 @@ public class MemberTests {
 //                        .build();
 //        repository.save(member);
         Member member = Member.builder()
-                        .email("user3@zerock.org")
+                        .email("user1@zerock.org")
                         .address("경기도")
                         .name("박길동")
                         .password(passwordEncoder.encode("1111"))
@@ -67,7 +67,7 @@ public class MemberTests {
         repository.save(member);
 
         // validation
-        assertEquals("user3@zerock.org", member.getEmail());
+        assertEquals("user1@zerock.org", member.getEmail());
     }
 
 
